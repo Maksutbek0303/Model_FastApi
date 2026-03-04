@@ -5,7 +5,6 @@ def hremployee_chek():
     api_url = 'http://127.0.0.1:8000/HREmployee/'
 
     st.title('HREmployee Project')
-    api_url = 'http://127.0.0.1:8001/predict/'
     Age = st.number_input('Age', min_value=18, max_value=100, value=30, step=1)
     DailyRate = st.number_input('Daily Rate', min_value=0, step=10)
     DistanceFromHome = st.number_input('Distance From Home', min_value=0, step=1)
