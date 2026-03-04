@@ -109,3 +109,35 @@ class TelecomPredictSchema(BaseModel):
     TotalCharges: float
 
 
+class HREmployeeSchema(BaseModel):
+    Age: int
+    BusinessTravel: str
+    DailyRate: int
+    DistanceFromHome: int
+    Education: int
+    EnvironmentSatisfaction: int
+    Gender: str
+    HourlyRate: int
+    JobInvolvement: int
+    JobLevel: int
+    JobSatisfaction: int
+    MonthlyIncome: int
+    MonthlyRate: int
+    NumCompaniesWorked: int
+    OverTime: str
+    PercentSalaryHike: int
+    PerformanceRating: int
+    RelationshipSatisfaction: int
+    StockOptionLevel: int
+    TotalWorkingYears: int
+    TrainingTimesLastYear: int
+    WorkLifeBalance: int
+    YearsAtCompany: int
+    YearsInCurrentRole: int
+    YearsSinceLastPromotion: int
+    YearsWithCurrManager: int
+    Department: str
+    EducationField: str
+    JobRole: str
+    MaritalStatus: str
+

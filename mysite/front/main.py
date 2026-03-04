@@ -13,11 +13,12 @@ from mysite.front.diabetes_front import diabetes_chek
 from mysite.front.avocado_front import avocado_chek
 from mysite.front.mushrooms_front import mushrooms_chek
 from mysite.front.telecom_front import telecom
+from mysite.front.hremployee_front import hremployee_chek
 
 
 with st.sidebar:
     name = st.radio(label='Models: ', options=['Info', 'Student', 'Titanic', 'House', 'Bank',
-                                                'Diabetes', 'Avocado', 'Mushroom', 'Telecom'])
+                                                'Diabetes', 'Avocado', 'Mushroom', 'Telecom', 'HREmployee'])
 
 if name == 'Info':
     st.title('Welcome')
@@ -29,6 +30,7 @@ if name == 'Info':
     st.write('Avocado — предсказание цен на авокадо')
     st.write('Mushroom — классификация грибов')
     st.write('Telecom — отток клиентов телекома')
+    st.write('HREmployee — проверка работников')
 
 elif name == 'Student':
     student_chek()
@@ -46,3 +48,5 @@ elif name == 'Mushroom':
     mushrooms_chek()
 elif name == 'Telecom':
     telecom()
+elif name == 'HREmployee':
+    hremployee_chek()
